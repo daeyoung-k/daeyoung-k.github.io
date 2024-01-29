@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kane</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-29T13:19:03+09:00</updated>
+  <updated>2024-01-29T13:36:04+09:00</updated>
   <author>
     <name>Kane</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/Kotlin-Multi-module/" rel="alternate" type="text/html" title="Kotlin Multi module 구축하기" />
     <published>2024-01-29T00:00:00+09:00</published>
   
-    <updated>2024-01-29T13:12:39+09:00</updated>
+    <updated>2024-01-29T13:23:53+09:00</updated>
   
     <id>http://localhost:4000/posts/Kotlin-Multi-module/</id>
     <content src="http://localhost:4000/posts/Kotlin-Multi-module/" />
