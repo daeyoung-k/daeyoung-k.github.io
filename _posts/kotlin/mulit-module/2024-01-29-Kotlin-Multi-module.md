@@ -14,7 +14,7 @@ pin: true
 3. 독립적인 빌드와 배포: 각 모듈은 독립적으로 빌드 및 배포될 수 있어, 시스템 전체의 개발 및 유지보수를 단순화합니다.
 
 ## 구조
-![Desktop View](/assets/img/struktur.png){: width="700" height="400" }
+![Desktop View](/assets/img/kotlin/struktur.png){: width="400" height="400" }
 
 하나의 spring 프로젝트에서 여러 디렉토리 구조를 가지고 서버를 실행시킬 수 있도록 구성
 common 모듈은 공통적으로 사용할 목적.
@@ -43,7 +43,7 @@ include("modules:app")
 ```
 추가할 모듈을 등록 
 
-##### build.gradle.kts 파일 수정하기 
+### build.gradle.kts 파일 수정하기 
 
 ```kotlin
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
@@ -105,13 +105,13 @@ subprojects {
 - allprojects {} 안에는 모든 프로젝트에 적용되어야 하는 부분 
 - subprojects {} 안에는 공통으로 사용될 의존성들이 적용되어야 하는 부분
 
-##### common 모듈의 구조
-![](Kotlin-Multi-module/image%202.png)
+### common 모듈의 구조
+![Desktop View](/assets/img/kotlin/common_struktur.png){: width="400" height="400" }
 - SpringBootApplication 을 실행하지 않는 공통 모듈로 사용 ( 메인 파일 삭제 )
 - 공통적으로 사용할 객체 집합용
   - TestInterface 를 다른 모듈들이 가져가 사용가능
 
-##### common 의 build.gradle.kts 파일 수정
+### common 의 build.gradle.kts 파일 수정
 ```kotlin
 import org.springframework.boot.gradle.tasks.bundling.BootJar
 
@@ -130,7 +130,7 @@ dependencies {
   - 빌드 시간을 줄이고 불필요한 파일이 생기는것을 방지
 
 
-##### 생성한 모듈의 내부 build.gradle.kts 변경
+### 생성한 모듈의 내부 build.gradle.kts 변경
 
 ```kotlin
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
@@ -154,10 +154,9 @@ springBoot{
   - web 종속성을 공통으로 사용하지 않을 목적 
 - springBoot {} main 의 위치 
   - 없어도 돌아가며 눈으로 확인하기 좋은 목적으로 표시
-
+  
+<br/>
 
 [GitHub Repository](https://github.com/daeyoung-k/kotlin-multi-module-template)
+
 Kotlin 프로젝트를 진행시 템플릿으로 사용할 목적으로 구조만 잡아둔 상태
-
- #kotlin #kotlin/multi_module
-

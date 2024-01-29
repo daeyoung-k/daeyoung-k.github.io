@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Kane # the main title
 
-tagline: 케인의 개발 블로그 # it will display as the sub-title
+tagline: 개발 블로그 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -44,7 +44,7 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+google_site_verification: 2IDzxRPSccOTVgYWZ1zvLV2K-EQ3KZ7HtViTTOe63po
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
@@ -70,7 +70,7 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://chirpy-img.netlify.app"
+img_cdn: ""
 
 my_img_cdn: ""
 
