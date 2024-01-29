@@ -115,8 +115,9 @@ tail_includes:
         d-flex justify-content-between align-items-center mt-5 pb-2
       "
     >
-      <div class="license-wrapper">
-        {% if site.data.locales[lang].copyright.license.template %}
+      <div class="license-wrapper">        
+        <!-- 하단 라이센스 표시 제거 주석           
+            {% if site.data.locales[lang].copyright.license.template %}
           {% capture _replacement %}
         <a href="{{ site.data.locales[lang].copyright.license.link }}">
           {{ site.data.locales[lang].copyright.license.name }}
@@ -124,7 +125,7 @@ tail_includes:
         {% endcapture %}
 
           {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }}
-        {% endif %}
+        {% endif %} -->
       </div>
 
       {% include post-sharing.html lang=lang %}

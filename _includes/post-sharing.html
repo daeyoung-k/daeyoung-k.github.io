@@ -1,7 +1,8 @@
 <!-- Post sharing snippet -->
 
 <div class="share-wrapper d-flex align-items-center">
-  <span class="share-label text-muted">{{ site.data.locales[include.lang].post.share }}</span>
+  <!-- 하단 아이콘 제거 주석    
+    <span class="share-label text-muted">{{ site.data.locales[include.lang].post.share }}</span>
   <span class="share-icons">
     {% capture title %}{{ page.title }} - {{ site.title }}{% endcapture %}
     {% assign title = title | uri_escape %}
@@ -48,5 +49,5 @@
     >
       <i class="fa-fw fas fa-link pe-none fs-6"></i>
     </button>
-  </span>
+  </span> -->
 </div>
