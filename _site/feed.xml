@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Kane</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-29T14:22:17+09:00</updated>
+  <updated>2024-02-19T11:42:23+09:00</updated>
   <author>
     <name>Kane</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,101 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Kotest Transactional Rollback 설정</title>
+    <link href="http://localhost:4000/posts/Transactional-Rollback/" rel="alternate" type="text/html" title="Kotest Transactional Rollback 설정" />
+    <published>2024-02-19T00:00:00+09:00</published>
+  
+    <updated>2024-02-19T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Transactional-Rollback/</id>
+    <content src="http://localhost:4000/posts/Transactional-Rollback/" />
+    <author>
+      <name>kane</name>
+    </author>
+
+  
+    
+    <category term="kotlin" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Transactional Rollback
+
+Kotest 에서 Junit 에서처럼 @Transactional 어노테이션을 선언하고 테스트 진행시 Rollback 이 안되는 이슈가 있다.
+
+검색해보니 extensions(SpringExtension) 을 선언해줘야 한다고 해서 선언 하고 진행해봤지만 그래도 Rollback 이 안되는건 마찬가지 였고 
+extensions(SpringTestExtension(SpringTestLifecycleMode.Root)) 으로 선언 해줘야 정상적으로 Rollback이 진행된다.
+
+SpringTestLifecycleMode.Test 의 옵션도 있는데 해당 옵션으로는 Rollback 이 정상적으로 되지 않는다.
+
+예시코드
+
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Kotest Entity OneToMany 오류</title>
+    <link href="http://localhost:4000/posts/Entity-OneToMany/" rel="alternate" type="text/html" title="Kotest Entity OneToMany 오류" />
+    <published>2024-02-19T00:00:00+09:00</published>
+  
+    <updated>2024-02-19T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Entity-OneToMany/</id>
+    <content src="http://localhost:4000/posts/Entity-OneToMany/" />
+    <author>
+      <name>kane</name>
+    </author>
+
+  
+    
+    <category term="kotlin" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Entity OneToMany
+
+oneToMany가 있는 Entity 를 사용하는 api를 서버를 킨후에  호출하면 OneToMany 컬럼의 데이터를 잘 가져 오는데… Kotest 에서 돌릴때는 null 값으로 반환되어 오류가 발생한다.
+
+Transactional 의 옵션과 관련이 있는것 같아 해당 파일을 확인해보았다.
+
+Transactional 코드
+
+public @interface Transactional {
+    TxType value() default Transactional.TxType.REQUIRED;
+
+    public static enum TxType {
+        REQUIRED,
+        REQUIRES_NEW,
+        MANDATORY,
+        SUPPOR...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>

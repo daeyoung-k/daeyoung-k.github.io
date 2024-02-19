@@ -1386,6 +1386,20 @@ modules/모듈 여러 모듈을 modules 안에 넣어두고 관리할 목적.
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -1402,10 +1416,202 @@ modules/모듈 여러 모듈을 modules 안에 넣어두고 관리할 목적.
     
     
     
+  
+    
+    
+    
+    
       
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1436,13 +1642,28 @@ modules/모듈 여러 모듈을 modules 안에 넣어두고 관리할 목적.
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/kotest/">kotest</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/entity/">entity</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/kotlin/">kotlin</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/multi-module/">multi module</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/onetomany/">onetomany</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/rollback/">rollback</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/solid/">solid</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/transactional/">transactional</a>
       
     </div>
   </section>
@@ -1497,6 +1718,30 @@ modules/모듈 여러 모듈을 modules 안에 넣어두고 관리할 목적.
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
 
 
@@ -1507,6 +1752,97 @@ modules/모듈 여러 모듈을 modules 안에 넣어두고 관리할 목적.
 
 
 
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Entity-OneToMany/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1708268400"
+  data-df="ll"
+  
+>
+  Feb 19, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Kotest Entity OneToMany 오류</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Entity OneToMany
+
+oneToMany가 있는 Entity 를 사용하는 api를 서버를 킨후에  호출하면 OneToMany 컬럼의 데이터를 잘 가져 오는데… Kotest 에서 돌릴때는 null 값으로 반환되어 오류가 발생한다.
+
+Transactional 의 옵션과 관련이 있는것 같아 해당 파일을 확인해보았다.
+
+Transactional 코드...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/Transactional-Rollback/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1708268400"
+  data-df="ll"
+  
+>
+  Feb 19, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Kotest Transactional Rollback 설정</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Transactional Rollback
+
+Kotest 에서 Junit 에서처럼 @Transactional 어노테이션을 선언하고 테스트 진행시 Rollback 이 안되는 이슈가 있다.
+
+검색해보니 extensions(SpringExtension) 을 선언해줘야 한다고 해서 선언 하고 진행해봤지만 그래도 Rollback 이 안되는건 마찬가지 였고 
+ex...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1528,9 +1864,13 @@ modules/모듈 여러 모듈을 modules 안에 넣어두고 관리할 목적.
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/Entity-OneToMany/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Kotest Entity OneToMany 오류</p>
+    </a>
   
 </nav>
 
@@ -1596,6 +1936,20 @@ modules/모듈 여러 모듈을 modules 안에 넣어두고 관리할 목적.
     
     
     
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
       
         
         
@@ -1612,10 +1966,202 @@ modules/모듈 여러 모듈을 modules 안에 넣어두고 관리할 목적.
     
     
     
+  
+    
+    
+    
+    
       
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1646,13 +2192,28 @@ modules/모듈 여러 모듈을 modules 안에 넣어두고 관리할 목적.
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/kotest/">kotest</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/entity/">entity</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/kotlin/">kotlin</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/multi-module/">multi module</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/onetomany/">onetomany</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/rollback/">rollback</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/solid/">solid</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/transactional/">transactional</a>
       
     </div>
   </section>

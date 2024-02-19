@@ -35,26 +35,28 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Tags" />
+<meta property="og:title" content="Kotest Entity OneToMany 오류" />
+<meta name="author" content="Kwon Dae young" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/tags/" />
-<meta property="og:url" content="http://localhost:4000/tags/" />
+<meta name="description" content="Entity OneToMany" />
+<meta property="og:description" content="Entity OneToMany" />
+<link rel="canonical" href="http://localhost:4000/posts/Entity-OneToMany/" />
+<meta property="og:url" content="http://localhost:4000/posts/Entity-OneToMany/" />
 <meta property="og:site_name" content="Kane" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-02-19T11:42:23+09:00" />
+<meta property="article:published_time" content="2024-02-19T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Tags" />
+<meta property="twitter:title" content="Kotest Entity OneToMany 오류" />
 <meta name="twitter:site" content="@gwondaeyeong13" />
+<meta name="twitter:creator" content="@Kwon Dae young" />
 <meta name="google-site-verification" content="2IDzxRPSccOTVgYWZ1zvLV2K-EQ3KZ7HtViTTOe63po" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-19T11:42:23+09:00","datePublished":"2024-02-19T11:42:23+09:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Tags","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tags/"},"url":"http://localhost:4000/tags/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kwon Dae young","url":"https://github.com/daeyoung-k"},"dateModified":"2024-02-19T00:00:00+09:00","datePublished":"2024-02-19T00:00:00+09:00","description":"Entity OneToMany","headline":"Kotest Entity OneToMany 오류","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Entity-OneToMany/"},"url":"http://localhost:4000/posts/Entity-OneToMany/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Tags | Kane
+  <title>Kotest Entity OneToMany 오류 | Kane
   </title>
 
   <!--
@@ -106,9 +108,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -305,7 +314,7 @@
         </li>
         <!-- .nav-item -->
       
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="/tags/" class="nav-link">
             <i class="fa-fw fas fa-tags"></i>
             
@@ -462,8 +471,10 @@
           
         
           
+        
+          
             
-              <span>Tags</span>
+              <span>Kotest Entity OneToMany 오류</span>
             
 
           
@@ -477,7 +488,7 @@
     </button>
 
     <div id="topbar-title">
-      Tags
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -503,78 +514,498 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
+  <header>
+    <h1 data-toc-skip>Kotest Entity OneToMany 오류</h1>
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
   
+  data-ts="1708268400"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Feb 19, 2024
+</time>
+
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              
+                <a href="https://github.com/daeyoung-k">Kwon Dae young</a>
+                
+              
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="782 words"
+>
+  <em>4 min</em> read</span>
+
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <h2 id="entity-onetomany"><span class="me-2">Entity OneToMany</span><a href="#entity-onetomany" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>oneToMany가 있는 Entity 를 사용하는 api를 서버를 킨후에  호출하면 OneToMany 컬럼의 데이터를 잘 가져 오는데… Kotest 에서 돌릴때는 null 값으로 반환되어 오류가 발생한다.</p>
+
+<p>Transactional 의 옵션과 관련이 있는것 같아 해당 파일을 확인해보았다.</p>
+
+<h3 id="transactional-코드"><span class="me-2">Transactional 코드</span><a href="#transactional-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<div class="language-kotlin highlighter-rouge"><div class="code-header">
+        <span data-label-text="Kotlin"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre>
+<span class="k">public</span> <span class="err">@</span><span class="kd">interface</span> <span class="nc">Transactional</span> <span class="p">{</span>
+    <span class="nc">TxType</span> <span class="nf">value</span><span class="p">()</span> <span class="n">default</span> <span class="nc">Transactional</span><span class="p">.</span><span class="nc">TxType</span><span class="p">.</span><span class="nc">REQUIRED</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="n">static</span> <span class="k">enum</span> <span class="nc">TxType</span> <span class="p">{</span>
+        <span class="nc">REQUIRED</span><span class="p">,</span>
+        <span class="nc">REQUIRES_NEW</span><span class="p">,</span>
+        <span class="nc">MANDATORY</span><span class="p">,</span>
+        <span class="nc">SUPPORTS</span><span class="p">,</span>
+        <span class="nc">NOT_SUPPORTED</span><span class="p">,</span>
+        <span class="nc">NEVER</span><span class="p">;</span>
+
+        <span class="k">private</span> <span class="nc">TxType</span><span class="p">()</span> <span class="p">{</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>기본옵션으로 REQUIRED 으로 되어있다. 
+해당옵션을 SUPPORTS 으로 변경해주면 정상 작동된다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">@Transactional(Transactional.TxType.SUPPORTS)</code>
+<a href="/assets/img/kotlin/transactional_supports.png" class="popup img-link  shimmer"><img src="/assets/img/kotlin/transactional_supports.png" alt="Desktop View" width="500" height="400" loading="lazy"></a></p>
+
+<h3 id="종류별-설명-springio-에서-한글-번역한-내용"><span class="me-2">종류별 설명. Spring.io 에서 한글 번역한 내용.</span><a href="#종류별-설명-springio-에서-한글-번역한-내용" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<ul>
+  <li>REQUIRED
+    <ul>
+      <li>현재 트랜잭션을 지원하고, 존재하지 않는 경우 새 트랜잭션을 생성하세요. 동일한 이름의 EJB 트랜잭션 속성과 유사합니다.</li>
+      <li>이는 트랜잭션 주석의 기본 설정입니다.</li>
+    </ul>
+  </li>
+  <li>REQUIRES_NEW
+    <ul>
+      <li>새 트랜잭션을 생성하고 현재 트랜잭션이 있으면 일시 중지합니다. 동일한 이름의 EJB 트랜잭션 속성과 유사합니다.</li>
+      <li><strong>참고:</strong> 실제 거래 중단은 모든 거래 관리자에서 기본적으로 작동하지 않습니다. 이는 특히 를 사용할 수 <a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/transaction/jta/JtaTransactionManager.html">JtaTransactionManager</a>있도록 요구하는 에 적용됩니다 jakarta.transaction.TransactionManager(표준 Jakarta EE에서는 서버마다 다릅니다).</li>
+    </ul>
+  </li>
+  <li>MANDATORY
+    <ul>
+      <li>현재 트랜잭션을 지원하고, 존재하지 않는 경우 예외를 발생시킵니다. 동일한 이름의 EJB 트랜잭션 속성과 유사합니다.</li>
+    </ul>
+  </li>
+  <li>SUPPORTS
+    <ul>
+      <li>현재 트랜잭션을 지원하고, 트랜잭션이 없으면 비트랜잭션으로 실행합니다. 동일한 이름의 EJB 트랜잭션 속성과 유사합니다.</li>
+      <li>참고: 트랜잭션 동기화를 사용하는 트랜잭션 관리자의 경우 SUPPORTS동기화가 적용될 트랜잭션 범위를 정의하므로 트랜잭션이 전혀 없는 것과 약간 다릅니다. 결과적으로 동일한 리소스(JDBC 연결, Hibernate 세션 등)가 지정된 전체 범위에 대해 공유됩니다. 이는 트랜잭션 관리자의 실제 동기화 구성에 따라 달라집니다.</li>
+    </ul>
+  </li>
+  <li>NOT_SUPPORTED
+    <ul>
+      <li>비트랜잭션으로 실행하고 현재 트랜잭션이 있는 경우 일시 중지합니다. 동일한 이름의 EJB 트랜잭션 속성과 유사합니다.</li>
+      <li><strong>참고:</strong> 실제 거래 중단은 모든 거래 관리자에서 기본적으로 작동하지 않습니다. 이는 특히 를 사용할 수 <a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/transaction/jta/JtaTransactionManager.html">JtaTransactionManager</a>있도록 요구하는 에 적용됩니다 jakarta.transaction.TransactionManager(표준 Jakarta EE에서는 서버마다 다릅니다).</li>
+    </ul>
+  </li>
+  <li>NEVER
+    <ul>
+      <li>비트랜잭션으로 실행하고, 트랜잭션이 존재하면 예외를 발생시킵니다. 동일한 이름의 EJB 트랜잭션 속성과 유사합니다.</li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/kotlin/">kotlin</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/kotest/"
+            class="post-tag no-text-decoration"
+          >kotest</a>
+        
+          <a
+            href="/tags/entity/"
+            class="post-tag no-text-decoration"
+          >entity</a>
+        
+          <a
+            href="/tags/onetomany/"
+            class="post-tag no-text-decoration"
+          >onetomany</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">        
+        <!-- 하단 라이센스 표시 제거 주석           
+            
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+         -->
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <!-- 하단 아이콘 제거 주석    
+    <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
     
     
-    <h1 class="dynamic-title">
-      Tags
-    </h1>
-    <div class="content">
-      <div id="tags" class="d-flex flex-wrap mx-xl-2">
-  
-  
+    
 
-  
+    
 
-  
-    <div>
-      <a class="tag" href="/tags/entity/">
-        entity<span class="text-muted">1</span>
+      
+
+      <a href="https://twitter.com/intent/tweet?text=Kotest%20Entity%20OneToMany%20%EC%98%A4%EB%A5%98%20-%20Kane&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FEntity-OneToMany%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/kotest/">
-        kotest<span class="text-muted">2</span>
+    
+
+      
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Kotest%20Entity%20OneToMany%20%EC%98%A4%EB%A5%98%20-%20Kane&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FEntity-OneToMany%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
       </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/kotlin/">
-        kotlin<span class="text-muted">1</span>
+    
+
+      
+
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FEntity-OneToMany%2F&text=Kotest%20Entity%20OneToMany%20%EC%98%A4%EB%A5%98%20-%20Kane" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
       </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/multi-module/">
-        multi module<span class="text-muted">1</span>
-      </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/onetomany/">
-        onetomany<span class="text-muted">1</span>
-      </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/rollback/">
-        rollback<span class="text-muted">1</span>
-      </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/solid/">
-        solid<span class="text-muted">1</span>
-      </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/transactional/">
-        transactional<span class="text-muted">1</span>
-      </a>
-    </div>
-  
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span> -->
 </div>
 
     </div>
-  
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -920,12 +1351,211 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Transactional-Rollback/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1708268400"
+  data-df="ll"
+  
+>
+  Feb 19, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Kotest Transactional Rollback 설정</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Transactional Rollback
+
+Kotest 에서 Junit 에서처럼 @Transactional 어노테이션을 선언하고 테스트 진행시 Rollback 이 안되는 이슈가 있다.
+
+검색해보니 extensions(SpringExtension) 을 선언해줘야 한다고 해서 선언 하고 진행해봤지만 그래도 Rollback 이 안되는건 마찬가지 였고 
+ex...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/Kotlin-Multi-module/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1706454000"
+  data-df="ll"
+  
+>
+  Jan 29, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Kotlin Multi module 구축하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  멀티모듈 은 여러 개의 프로젝트 모듈을 하나의 빌드로 관리하는 방법을 제공합니다. 각 모듈은 독립적으로 개발되거나 빌드될 수 있으며, 이는 프로젝트를 더 쉽게 유지보수하고 확장할 수 있도록 도와줍니다.
+
+
+  모듈 간의 의존성 관리: 각 모듈은 필요한 의존성을 정의하고, 이를 다른 모듈에서 사용할 수 있습니다.
+  코드의 모듈화: 비즈니스 로직이나 데...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/Kotlin-Multi-module/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Kotlin Multi module 구축하기</p>
+    </a>
+  
+
+  
+    <a
+      href="/posts/Transactional-Rollback/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Kotest Transactional Rollback 설정</p>
+    </a>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -1321,6 +1951,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1356,16 +1993,72 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/commons.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

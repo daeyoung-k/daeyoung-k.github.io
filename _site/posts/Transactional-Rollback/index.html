@@ -35,26 +35,28 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Tags" />
+<meta property="og:title" content="Kotest Transactional Rollback 설정" />
+<meta name="author" content="Kwon Dae young" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/tags/" />
-<meta property="og:url" content="http://localhost:4000/tags/" />
+<meta name="description" content="Transactional Rollback" />
+<meta property="og:description" content="Transactional Rollback" />
+<link rel="canonical" href="http://localhost:4000/posts/Transactional-Rollback/" />
+<meta property="og:url" content="http://localhost:4000/posts/Transactional-Rollback/" />
 <meta property="og:site_name" content="Kane" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-02-19T11:42:23+09:00" />
+<meta property="article:published_time" content="2024-02-19T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Tags" />
+<meta property="twitter:title" content="Kotest Transactional Rollback 설정" />
 <meta name="twitter:site" content="@gwondaeyeong13" />
+<meta name="twitter:creator" content="@Kwon Dae young" />
 <meta name="google-site-verification" content="2IDzxRPSccOTVgYWZ1zvLV2K-EQ3KZ7HtViTTOe63po" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-02-19T11:42:23+09:00","datePublished":"2024-02-19T11:42:23+09:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Tags","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tags/"},"url":"http://localhost:4000/tags/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kwon Dae young","url":"https://github.com/daeyoung-k"},"dateModified":"2024-02-19T00:00:00+09:00","datePublished":"2024-02-19T00:00:00+09:00","description":"Transactional Rollback","headline":"Kotest Transactional Rollback 설정","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Transactional-Rollback/"},"url":"http://localhost:4000/posts/Transactional-Rollback/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Tags | Kane
+  <title>Kotest Transactional Rollback 설정 | Kane
   </title>
 
   <!--
@@ -106,9 +108,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -305,7 +314,7 @@
         </li>
         <!-- .nav-item -->
       
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="/tags/" class="nav-link">
             <i class="fa-fw fas fa-tags"></i>
             
@@ -462,8 +471,10 @@
           
         
           
+        
+          
             
-              <span>Tags</span>
+              <span>Kotest Transactional Rollback 설정</span>
             
 
           
@@ -477,7 +488,7 @@
     </button>
 
     <div id="topbar-title">
-      Tags
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -503,78 +514,397 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
+  <header>
+    <h1 data-toc-skip>Kotest Transactional Rollback 설정</h1>
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
   
+  data-ts="1708268400"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Feb 19, 2024
+</time>
+
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              
+                <a href="https://github.com/daeyoung-k">Kwon Dae young</a>
+                
+              
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="132 words"
+>
+  <em>1 min</em> read</span>
+
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <h2 id="transactional-rollback"><span class="me-2">Transactional Rollback</span><a href="#transactional-rollback" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Kotest 에서 Junit 에서처럼 @Transactional 어노테이션을 선언하고 테스트 진행시 Rollback 이 안되는 이슈가 있다.</p>
+
+<p>검색해보니 extensions(SpringExtension) 을 선언해줘야 한다고 해서 선언 하고 진행해봤지만 그래도 Rollback 이 안되는건 마찬가지 였고 
+extensions(SpringTestExtension(SpringTestLifecycleMode.Root)) 으로 선언 해줘야 정상적으로 Rollback이 진행된다.</p>
+
+<p>SpringTestLifecycleMode.Test 의 옵션도 있는데 해당 옵션으로는 Rollback 이 정상적으로 되지 않는다.</p>
+
+<h3 id="예시코드"><span class="me-2">예시코드</span><a href="#예시코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p><a href="/assets/img/kotlin/transactional.png" class="popup img-link  shimmer"><img src="/assets/img/kotlin/transactional.png" alt="Desktop View" loading="lazy"></a></p>
+
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/kotlin/">kotlin</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/kotest/"
+            class="post-tag no-text-decoration"
+          >kotest</a>
+        
+          <a
+            href="/tags/transactional/"
+            class="post-tag no-text-decoration"
+          >transactional</a>
+        
+          <a
+            href="/tags/rollback/"
+            class="post-tag no-text-decoration"
+          >rollback</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">        
+        <!-- 하단 라이센스 표시 제거 주석           
+            
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+         -->
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <!-- 하단 아이콘 제거 주석    
+    <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
     
     
-    <h1 class="dynamic-title">
-      Tags
-    </h1>
-    <div class="content">
-      <div id="tags" class="d-flex flex-wrap mx-xl-2">
-  
-  
+    
 
-  
+    
 
-  
-    <div>
-      <a class="tag" href="/tags/entity/">
-        entity<span class="text-muted">1</span>
+      
+
+      <a href="https://twitter.com/intent/tweet?text=Kotest%20Transactional%20Rollback%20%EC%84%A4%EC%A0%95%20-%20Kane&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FTransactional-Rollback%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/kotest/">
-        kotest<span class="text-muted">2</span>
+    
+
+      
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Kotest%20Transactional%20Rollback%20%EC%84%A4%EC%A0%95%20-%20Kane&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FTransactional-Rollback%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
       </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/kotlin/">
-        kotlin<span class="text-muted">1</span>
+    
+
+      
+
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FTransactional-Rollback%2F&text=Kotest%20Transactional%20Rollback%20%EC%84%A4%EC%A0%95%20-%20Kane" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
       </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/multi-module/">
-        multi module<span class="text-muted">1</span>
-      </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/onetomany/">
-        onetomany<span class="text-muted">1</span>
-      </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/rollback/">
-        rollback<span class="text-muted">1</span>
-      </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/solid/">
-        solid<span class="text-muted">1</span>
-      </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/transactional/">
-        transactional<span class="text-muted">1</span>
-      </a>
-    </div>
-  
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span> -->
 </div>
 
     </div>
-  
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -920,12 +1250,208 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Entity-OneToMany/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1708268400"
+  data-df="ll"
+  
+>
+  Feb 19, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Kotest Entity OneToMany 오류</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Entity OneToMany
+
+oneToMany가 있는 Entity 를 사용하는 api를 서버를 킨후에  호출하면 OneToMany 컬럼의 데이터를 잘 가져 오는데… Kotest 에서 돌릴때는 null 값으로 반환되어 오류가 발생한다.
+
+Transactional 의 옵션과 관련이 있는것 같아 해당 파일을 확인해보았다.
+
+Transactional 코드...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/Kotlin-Multi-module/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1706454000"
+  data-df="ll"
+  
+>
+  Jan 29, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Kotlin Multi module 구축하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  멀티모듈 은 여러 개의 프로젝트 모듈을 하나의 빌드로 관리하는 방법을 제공합니다. 각 모듈은 독립적으로 개발되거나 빌드될 수 있으며, 이는 프로젝트를 더 쉽게 유지보수하고 확장할 수 있도록 도와줍니다.
+
+
+  모듈 간의 의존성 관리: 각 모듈은 필요한 의존성을 정의하고, 이를 다른 모듈에서 사용할 수 있습니다.
+  코드의 모듈화: 비즈니스 로직이나 데...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/Entity-OneToMany/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Kotest Entity OneToMany 오류</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -1321,6 +1847,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1356,16 +1889,72 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/commons.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
