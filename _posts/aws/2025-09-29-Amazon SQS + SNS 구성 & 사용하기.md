@@ -4,12 +4,12 @@ author: kane
 date: 2025-09-25
 categories:
   - Backend
-  - Kotlin
-  - Python
   - AWS
 tags:
-  - SQS
-  - SNS
+  - kotlin
+  - python
+  - sqs
+  - sns
 render_with_liquid: false
 pin: false
 description:

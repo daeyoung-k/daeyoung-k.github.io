@@ -5,8 +5,8 @@ date: 2025-08-27
 categories:
   - AWS
 tags:
-  - S3
-  - CloudFront
+  - s3
+  - cloudfront
 render_with_liquid: false
 pin: false
 description:

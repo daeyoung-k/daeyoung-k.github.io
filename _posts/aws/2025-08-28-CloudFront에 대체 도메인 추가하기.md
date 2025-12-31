@@ -5,9 +5,9 @@ date: 2025-08-28
 categories:
   - AWS
 tags:
-  - CloudFront
-  - ACM
-  - Route53
+  - cloudfront
+  - acm
+  - route53
 render_with_liquid: false
 pin: false
 description:
